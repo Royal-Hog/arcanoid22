@@ -2,6 +2,7 @@
 #define GAME_H
 #include "brick.h"
 #include "paddle.h"
+#include "ball.h"
 
 #include <vector>
 class Ball;
@@ -19,6 +20,7 @@ static sf::Text lifes_amount;
 
 void CheckForWindowClosed(sf::Event& event, sf::RenderWindow& window);
 
+const int32_t WINDOW_HEIGHT = 600; //â game
 
 
 void DrawScene(sf::RenderWindow& window, Ball& ball, Paddle& paddle, std::vector<Brick>& BricksList, std::vector<Bonus>& BonusList);
@@ -36,7 +38,7 @@ private:
     bool bottom_as_paddle;
 public:
     static Game* Play;
-   
+
     Game();
     void addScores(int amount);
     void goNextLevel();

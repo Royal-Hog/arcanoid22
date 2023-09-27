@@ -12,6 +12,9 @@ static Texture BRICK_TEXTURE_5;
 
 static Texture BONUS_TEXTURE;
 
+const Vector2f BALL_INIT_POS = Vector2f(400, 300); //â entity
+const Vector2f BALL_SCALE = Vector2f(0.1f, 0.1f); //â entity
+const float BALL_SPEED = 32.0f; //â entity
 
 
 
